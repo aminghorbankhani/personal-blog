@@ -1,0 +1,16 @@
+.title {
+  font-size: 1.75rem;
+  margin-bottom: 0.4375rem;
+  margin-top: 3.5rem;
+  line-height: 1.1;
+}
+
+.title a {
+  text-decoration: none;
+  font-family: var(--font-mont);
+  font-weight: 900;
+}
+
+.body {
+  margin-bottom: 1.75rem;
+}

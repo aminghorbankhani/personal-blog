@@ -1,0 +1,11 @@
+.footer {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  margin-top: 4.375rem;
+  padding-top: 1.75rem;
+}
+
+.rss {
+  margin-left: auto;
+}

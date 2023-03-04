@@ -1,0 +1,16 @@
+.aside {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 3.5rem;
+}
+
+.image {
+  width: 56px;
+  height: 56px;
+  border-radius: 100%;
+}
+
+.info {
+  margin-left: 0.875rem;
+  margin-bottom: 1.75rem;
+}
