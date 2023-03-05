@@ -8,8 +8,8 @@
 
 .header a {
   text-decoration: none;
-  font-family: var(--font-mont);
-  font-weight: 900;
+  font-family: inherit;
+  color: inherit;
 }
 
 .header h1 {
@@ -18,16 +18,8 @@
   line-height: 2.625rem;
 }
 
-.header h1 a {
-  color: var(--text-title);
-}
-
 .header h3 {
-  color: var(--text-title);
+  color: rgb(255, 167, 196);
   font-size: 1.4427rem;
   line-height: 2.625rem;
-}
-
-.header h3 a {
-  color: rgb(255, 167, 196);
 }

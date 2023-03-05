@@ -1,9 +1,14 @@
 import Head from 'next/head'
 import { Aside, Footer, Header, PostCard } from '@/components'
-import { PostType, PreparedPostType } from '@/types'
 import moment from 'moment'
+import { GetStaticProps, NextPage } from 'next/types'
+import { PreparedPostType, PostType } from '@/types'
 
-export async function getStaticProps() {
+type Props = {
+  posts: Array<PreparedPostType>
+}
+
+export const getStaticProps: GetStaticProps = async () => {
   const res = await fetch('https://jsonplaceholder.typicode.com/posts')
   const posts = (await res.json()) as Array<PostType>
   const preparedPosts = posts
@@ -27,7 +32,7 @@ export async function getStaticProps() {
   }
 }
 
-export default function Home({ posts }: { posts: Array<PreparedPostType> }) {
+const Home: NextPage<Props> = ({ posts }) => {
   return (
     <>
       <Head>
@@ -50,3 +55,5 @@ export default function Home({ posts }: { posts: Array<PreparedPostType> }) {
     </>
   )
 }
+
+export default Home

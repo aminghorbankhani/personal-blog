@@ -7,8 +7,7 @@
 
 .title a {
   text-decoration: none;
-  font-family: var(--font-mont);
-  font-weight: 900;
+  font-family: inherit;
 }
 
 .body {
