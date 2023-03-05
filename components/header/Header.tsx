@@ -3,7 +3,17 @@ import { FC } from 'react'
 import { Switch } from '../switch'
 import styles from './Header.module.css'
 
-export const Header: FC<{ isHome?: boolean }> = ({ isHome }) => {
+type Props = {
+  isHome: boolean
+  switchChecked: boolean
+  onSwitchChange: () => void
+}
+
+export const Header: FC<Props> = ({
+  isHome,
+  switchChecked,
+  onSwitchChange,
+}) => {
   return (
     <header className={styles.header}>
       {isHome ? (
@@ -16,7 +26,7 @@ export const Header: FC<{ isHome?: boolean }> = ({ isHome }) => {
         </h3>
       )}
 
-      <Switch />
+      <Switch checked={switchChecked} onChange={onSwitchChange} />
     </header>
   )
 }

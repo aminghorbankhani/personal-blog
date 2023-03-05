@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import { Aside, Footer, Header, PostCard } from '@/components'
+import { Aside, Footer, PostCard } from '@/components'
 import moment from 'moment'
 import { GetStaticProps, NextPage } from 'next/types'
 import { PreparedPostType, PostType } from '@/types'
@@ -44,7 +44,6 @@ const Home: NextPage<Props> = ({ posts }) => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Header isHome />
       <Aside />
       <main>
         {posts.map((post) => (

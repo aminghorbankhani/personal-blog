@@ -1,4 +1,3 @@
-import { Header } from '@/components'
 import { PostType, PreparedPostType } from '@/types'
 import moment from 'moment'
 import Head from 'next/head'
@@ -51,7 +50,7 @@ const Post: NextPage<Props> = ({ post }) => {
   return (
     <>
       <Head>
-        <title>Post Page</title>
+        <title>{post.title}</title>
         <meta
           name="description"
           content="A blog created by Amin ghorbankhani"
@@ -59,7 +58,6 @@ const Post: NextPage<Props> = ({ post }) => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Header />
       <main>
         <article>
           <header>

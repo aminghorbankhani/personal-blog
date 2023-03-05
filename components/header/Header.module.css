@@ -19,7 +19,7 @@
 }
 
 .header h3 {
-  color: rgb(255, 167, 196);
+  color: var(--pink);
   font-size: 1.4427rem;
   line-height: 2.625rem;
 }
